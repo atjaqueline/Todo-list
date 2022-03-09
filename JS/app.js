@@ -1,11 +1,11 @@
-const letters = document.querySelectorAll(".letters");
-
-function ramdomRbg() {
-    const R = Math.floor(Math.random() * 255);
-    const B = Math.floor(Math.random() * 255);
-    const G = Math.floor(Math.random() * 255);
-    console.log(R, B, G);
-
+function ramdomRgb() {
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+    return `rgb(${r},${g},${b})`
 }
 
-letters.styles.color = ramdomRbg();
+
+const letters = document.getElementsByClassName('letter')
+
+letters.style.color = ramdomRgb();

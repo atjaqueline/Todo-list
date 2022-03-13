@@ -10,6 +10,16 @@ for (i = 0; i < myNodelist.length; i++) {
 }
 
 
+// Click on a close button to hide the current list item
+
+let close = document.getElementsByClassName("close");
+
+for (let i = 0; i < close.length; i++) {
+    close[i].addEventListener("click", function() {
+        myNodelist[i].style.display = "none";
+
+    });
+}
 
 
 

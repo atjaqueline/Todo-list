@@ -25,7 +25,6 @@ for (let i = 0; i < close.length; i++) {
 
 const listItem = document.querySelector("ul");
 
-
 listItem.addEventListener('click', function(e) {
     if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked");

@@ -9,18 +9,6 @@ for (i = 0; i < myNodelist.length; i++) {
     myNodelist[i].append(span);
 }
 
-
-// Click on a close button to hide the current list item
-
-let close = document.getElementsByClassName("close");
-
-for (let i = 0; i < close.length; i++) {
-    close[i].addEventListener("click", function() {
-        myNodelist[i].style.display = "none";
-
-    });
-}
-
 // Add class "Checked" when list is clicked
 
 const listItem = document.querySelector("ul");
@@ -28,6 +16,18 @@ const listItem = document.querySelector("ul");
 listItem.addEventListener('click', function(e) {
     if (e.target.tagName === "LI") {
         e.target.classList.toggle("checked");
+    }
+});
+
+
+
+// Click on a close button to hide the current list item
+
+const closeBtn = document.querySelector("ul");
+
+closeBtn.addEventListener('click', function(e) {
+    if (e.target.tagName === 'SPAM') {
+        e.target.parentElement.remove();
     }
 });
 
@@ -52,15 +52,6 @@ addItem.addEventListener('click', function() {
     span.className = "close";
     span.append(txt);
     li.append(span);
-
-    let close = document.getElementsByClassName("close");
-
-    for (let i = 0; i < close.length; i++) {
-        close[i].addEventListener("click", function() {
-            myNodelist[i].style.display = "none";
-
-        })
-    }
 });
 
 

@@ -65,7 +65,7 @@ addItem.addEventListener('click', function() {
 
 
 
-
+/*
 
 function ramdomRgb() {
     const r = Math.floor(Math.random() * 255);
@@ -83,3 +83,4 @@ console.log(letters)
 
 
 letters.style.color = "blue";
+*/

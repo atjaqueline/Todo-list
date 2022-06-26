@@ -19,8 +19,6 @@ listItem.addEventListener('click', function(e) {
     }
 });
 
-
-
 // Click on a close button to hide the current list item
 
 const closeBtn = document.querySelector("ul");
@@ -60,27 +58,3 @@ addItem.addEventListener('click', function() {
 
 
 
-
-
-
-
-
-/*
-
-function ramdomRgb() {
-    const r = Math.floor(Math.random() * 255);
-    const g = Math.floor(Math.random() * 255);
-    const b = Math.floor(Math.random() * 255);
-    return `rgb(${r},${g},${b})`
-}
-
-
-const letters = document.getElementsByClassName('letter')
-
-console.log(letters)
-
-
-
-
-letters.style.color = "blue";
-*/
